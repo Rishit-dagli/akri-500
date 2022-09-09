@@ -23,7 +23,7 @@ kubernetesDistro: ""
 # generalize references to `apiGroups` and `apiVersion` values for Akri CRDs
 crds:
   group: akri.sh
-  version: v0
+  version: v1
 
 rbac:
   # enabled defines whether to apply rbac to Akri
