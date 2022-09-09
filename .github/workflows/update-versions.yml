@@ -50,7 +50,7 @@ jobs:
             labels: ['version/${{ env.BUMP_TYPE }}']
           })
 
-    - name: Push Changes
+    - name: Commit Changes
       if: ${{ env.BUMP_TYPE }}
       run: |
         git config user.name 'github-actions[bot]'
@@ -59,4 +59,11 @@ jobs:
         git add .
         git commit -m "Update ${{ env.BUMP_TYPE }} version" --signoff
         git push
+        
+    - name: Push changes
+      if: ${{ env.BUMP_TYPE }}
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
     
