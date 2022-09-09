@@ -78,11 +78,12 @@ jobs:
         git pull
         git add .
         git commit -m "Update ${{ env.BUMP_TYPE }} version" --signoff
+        git push
         
-    - name: Push changes
-      if: ${{ env.BUMP_TYPE }}
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+    # - name: Push changes
+    #   if: ${{ env.BUMP_TYPE }}
+    #   uses: ad-m/github-push-action@master
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     branch: ${{ github.ref }}
     
