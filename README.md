@@ -5,7 +5,7 @@
 [![Kubernetes Version](https://img.shields.io/badge/kubernetes-≥%201.16-blue.svg)](https://kubernetes.io/)
 [![codecov](https://codecov.io/gh/project-akri/akri/branch/main/graph/badge.svg?token=V468HO7CDE)](https://codecov.io/gh/project-akri/akri)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5339/badge)](https://bestpractices.coreinfrastructure.org/projects/5339)
-
+   
 [![Check Rust](https://github.com/project-akri/akri/workflows/Check%20Rust/badge.svg?branch=main&event=push)](https://github.com/project-akri/akri/actions?query=workflow%3A%22Check+Rust%22)
 [![Tarpaulin Code Coverage](https://github.com/project-akri/akri/workflows/Tarpaulin%20Code%20Coverage/badge.svg?branch=main&event=push)](https://github.com/project-akri/akri/actions?query=workflow%3A%22Tarpaulin+Code+Coverage%22)
 [![Build Controller](https://github.com/project-akri/akri/workflows/Build%20Controller/badge.svg?branch=main&event=push)](https://github.com/project-akri/akri/actions?query=workflow%3A%22Build+Controller%22)
