@@ -1,5 +1,5 @@
 /// Akri API Version
-pub const API_VERSION: &str = "v0";
+pub const API_VERSION: &str = "v1";
 /// Version for kube:Api::watch
 /// TODO: use kube_runtime::watcher::watcher to avoid managing version
 pub const WATCH_VERSION: &str = "0";
